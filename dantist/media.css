@@ -1,0 +1,37 @@
+.dws-menu[type="checkbox"]{
+	display: none;
+}
+
+.dws-menu label.toggleMenu{
+	background: #C9C9C9;
+	display: block;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-style: 14px;
+	cursor: pointer;
+	position: relative;
+}
+.dws-menu label.toggleMenu .fa{
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	font-size: 18px;
+}
+@media all and (max-width: 800px){
+	.dws-menu{
+		overflow: hidden;
+	}
+	.dws-menu ul{
+		display: block;
+	}
+	.dws-menu label.toggleMenu{
+		display: block;
+	}
+	input.toggleMenu:checked + label.toggleMenu{
+		background:#000;
+		color:#fff;
+	}
+	input.toggleMenu:checked ~ ul{
+		display: block;
+	}
+}
